@@ -51,7 +51,7 @@ def verificar_caminho_euleriano(G):
   return True
 
 def calcular_grau_medio(G):
-  return calcular_tamanho(G) / calcular_ordem(G)
+  return 2 * calcular_tamanho(G) / calcular_ordem(G)
 
 def calcular_diamentro(G):
   return nx.diameter(G)
@@ -68,7 +68,7 @@ print(f"A ordem do grafo é: {calcular_ordem(G)}")
 print(f"O tamanho do grafo é: {calcular_tamanho(G)}")
 print(f"A quantidade de componentes conexos é: {quantidade_componentes_conexos(G)}")
 print(f"O grafo é euleriano: {verificar_caminho_euleriano(G)}")
-print(f"O grau médio do grafo é: {grau_medio:.2f}")
+print(f"O grau médio do grafo é: {grau_medio:.3f}")
 print(f"O diâmetro do grafo é: {calcular_diamentro(G)}")
 print(f"A distância entre os vértices 1 e 10 é: {calcular_distancia_entre_dois_pontos(G, 1, 10)}")
 print(f"A distância entre os vértices 1 e 15 é: {calcular_distancia_entre_dois_pontos(G, 1, 15)}")
